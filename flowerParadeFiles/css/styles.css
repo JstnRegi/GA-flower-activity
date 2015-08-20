@@ -1,0 +1,13 @@
+img {
+    width: 350px;
+    height: 350px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* sets the text to the left and gives decent spacing in between lines*/
+
+#flowerRow {
+    text-align: left;
+    line-height: 28px;
+}

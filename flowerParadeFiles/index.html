@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Flower Parade</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- VENDOR JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+    <script type="text/javascript" src="flower.js"></script>
+    <script type="text/javascript" src="base.js"></script>
+</head>
+<body>
+<h1> General Assembly: Class Room 6 Flower Parade</h1>
+
+<!-- Where the output from our template gets printed into -->
+<div id="flowerRow">
+
+</div>
+
+<!-- Yells at underscore to look at this. And form it into a mold for further use.
+The key hunters, (<%= key %>) stare into the object and pick out the value of the key they hunt for.
+ p.s. Idk how to comment within that script html javascript hell. -->
+    <script type="text/template" id="flower-template">
+        <div class="flowerInfo">
+            <hr>
+            <p>
+                <img src="<%= image %>"> <br>
+                Flower Name: <%= name %> <br>
+                Flower Color: <%= color %> <br>
+                Petal Count: <%= petals %> <br>
+                Leaf Count: <%= leafCount %> <br>
+                Edible: <%= isEdible %> <br>
+                Smell Pretty: <%= smellsPretty %> <br>
+                Comments: <%= comment %>
+            </p>
+        </div>
+    </script>
+
+
+
+</body>
